@@ -1,6 +1,9 @@
-# 🌐 FastAPI Hotmart QA Service
+# 🌐 Hotmart QA Service
 
 Este é um serviço de perguntas e respostas desenvolvido com **FastAPI** que permite ao usuário realizar perguntas sobre a plataforma **Hotmart**. Ele utiliza embeddings e um índice **FAISS** para retornar respostas relevantes.
+
+![image](https://github.com/user-attachments/assets/e1f7cdf9-a11e-467d-acea-501447d55dac)
+
 
 ## 📋 Pré-requisitos
 

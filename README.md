@@ -13,11 +13,11 @@ Antes de começar, certifique-se de ter o seguinte instalado: 🐍 **Python 3.9+
 3. 📥 Instale as dependências com `pip install -r requirements.txt`.
 4. 🔐 Configure as variáveis de ambiente criando um arquivo `.env` na raiz do projeto com a chave da API do OpenAI: `OPENAI_API_KEY=your_openai_api_key`.
 
-## 🚀 Executando a Aplicação
+## 🚀 Executando a Aplicação (via FastAPI)
 
 Para iniciar o servidor FastAPI localmente, execute o comando `uvicorn main:app --reload`. A aplicação estará disponível em [http://localhost:8000](http://localhost:8000).
 
-![image](https://github.com/user-attachments/assets/adea6a8c-202e-4c4d-a289-340b65f0b2d4)
+![image](https://github.com/user-attachments/assets/7ef22cbe-2b79-497a-bca4-5a3b70a0f876)
 
 
 ## 📑 Documentação da API

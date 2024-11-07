@@ -12,19 +12,26 @@ Antes de começar, certifique-se de ter o seguinte instalado: 🐍 **Python 3.9+
 #### 1. Clone o repositório
 ```bash
 git clone https://github.com/hgamaf/hotmart_web_rag.git
+```
+
+#### 2. Vá para a pasta da aplicação
+```bash
 cd hotmart_web_rag
 ```
 
 ##### 2. Crie e ative um ambiente virtual
-###### No Windows:
+###### Criando .venv o Windows ou Mac:
 ```bash
 python -m venv .venv
+```
+
+###### Ativando .venv o Windows:
+```bash
 .venv\Scripts\activate
 ```
 
-###### No Mac:
+###### Ativando .venv o Mac:
 ```bash
-python3 -m venv .venv
 source .venv/bin/activate
 ```
 

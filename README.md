@@ -11,6 +11,8 @@ Antes de começar, certifique-se de ter o seguinte instalado:
 ## ⚙️ Configuração
 
 ### Instruções de Configuração do Projeto
+Abra o cmd (Windows) ou Terminal (Mac):
+
 #### 1. Clone o repositório
 ```bash
 git clone https://github.com/hgamaf/hotmart_web_rag.git

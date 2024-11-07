@@ -9,9 +9,8 @@ Antes de começar, certifique-se de ter o seguinte instalado: 🐍 **Python 3.9+
 ## ⚙️ Configuração
 
 ### Instruções de Configuração do Projeto
-
-```bash
 # 1. Clone o repositório
+```bash
 git clone https://github.com/hgamaf/hotmart_web_rag.git
 cd hotmart_web_rag
 ```

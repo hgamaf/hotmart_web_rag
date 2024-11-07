@@ -19,7 +19,7 @@ git clone https://github.com/hgamaf/hotmart_web_rag.git
 cd hotmart_web_rag
 ```
 
-##### 2. Crie e ative um ambiente virtual
+#### 3. Crie e ative um ambiente virtual
 ###### Criando .venv o Windows ou Mac:
 ```bash
 python -m venv .venv
@@ -35,12 +35,12 @@ python -m venv .venv
 source .venv/bin/activate
 ```
 
-##### 3. Instale as dependências
+#### 4. Instale as dependências
 ```bash
 pip install -r requirements.txt
 ```
 
-##### 4. Configure as variáveis de ambiente
+#### 5. Configure as variáveis de ambiente
 ```bash
 echo # Variáveis de ambiente >> .env
 ```

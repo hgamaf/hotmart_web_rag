@@ -56,37 +56,46 @@ Para iniciar o servidor FastAPI localmente, execute o comando `uvicorn main:app 
 
 ## 🐳 Executando com Docker
 
-Se preferir, você pode rodar a aplicação em um contêiner Docker.
+Se preferir, você pode rodar a aplicação em um contêiner Docker para simplificar a configuração e garantir que todas as dependências estejam isoladas.
 
 ### Passos para execução:
 
-1. **ATENÇÃO**! Você deve inicializar o Docker Desktop
-2. 📦 Construa a imagem com `docker-compose build`.
-3. ▶️ Execute o contêiner com `docker-compose up`.
-4. A aplicação estará disponível em [http://localhost:8000](http://localhost:8000) e pronta para receber requisições.
+1. **ATENÇÃO**: Certifique-se de que o Docker Desktop está ativo.
+   - Antes de prosseguir, abra o Docker Desktop e aguarde até que ele esteja totalmente iniciado.
 
-![image](https://github.com/user-attachments/assets/86b83172-efc7-423d-8c7b-ed8be67d2017)
+2. 📦 **Construa a imagem Docker**:
+   - No terminal, dentro do diretório do projeto, execute o comando abaixo para construir a imagem Docker:
+     ```bash
+     docker-compose build
+     ```
+   - Este comando prepara todos os componentes necessários para a aplicação funcionar no contêiner.
 
+3. ▶️ **Inicie o contêiner Docker**:
+   - Após a construção da imagem, inicie o contêiner com o comando:
+     ```bash
+     docker-compose up
+     ```
+   - Esse comando inicia a aplicação no contêiner e a mantém em execução.
+
+4. **Verifique o status**:
+   - Quando o contêiner estiver em execução, a aplicação estará disponível em [http://localhost:8000](http://localhost:8000).
+   - Aguarde até que o terminal confirme que a aplicação está rodando e pronta para receber requisições.
+
+---
 
 ## Como testar?
 
-## Exemplo de `curl` para a pergunta "O que são hotleads?"
+Após a aplicação estar rodando no Docker, você pode verificar se ela está funcionando corretamente enviando uma pergunta para o endpoint. Abaixo está um exemplo de `curl` que pode ser executado somente **após** os passos acima:
 
-```bash
-curl -X 'POST' 'http://localhost:8000/ask_question' \
-     -H 'accept: application/json' \
-     -H 'Content-Type: application/json' \
-     -d '{ "question": "O que são hotleads?" }'
-```
+### Exemplo de `curl` para a pergunta "O que são hotleads?"
 
-## Exemplo de `curl` para a pergunta sobre "Produtos digitais"
-
-```bash
-curl -X 'POST' 'http://localhost:8000/ask_question' \
--H 'accept: application/json' \
--H 'Content-Type: application/json' \
--d '{ "question": "Entre os produtos digitais, quais os formatos de screencasts aceitos?" }'
-```
+1. No terminal, execute o comando abaixo para enviar uma pergunta à aplicação:
+   ```bash
+   curl -X 'POST' 'http://localhost:8000/ask_question' \
+        -H 'accept: application/json' \
+        -H 'Content-Type: application/json' \
+        -d '{ "question": "O que são hotleads?" }'
+   ```
 
 
-🎉 Com este guia, você tem tudo o que precisa para configurar, executar e utilizar sua aplicação FastAPI. Qualquer ajuste ou personalização adicional pode ser facilmente implementado conforme necessário. 📫 Dúvidas? Sinta-se à vontade para contribuir ou entrar em contato!
+

@@ -14,6 +14,7 @@ Antes de começar, certifique-se de ter o seguinte instalado: 🐍 **Python 3.9+
 # 1. Clone o repositório
 git clone https://github.com/hgamaf/hotmart_web_rag.git
 cd hotmart_web_rag
+```
 
 # 2. Crie e ative um ambiente virtual
 # No Windows:

@@ -68,21 +68,25 @@ Se preferir, você pode rodar a aplicação em um contêiner Docker.
 ![image](https://github.com/user-attachments/assets/86b83172-efc7-423d-8c7b-ed8be67d2017)
 
 
-## 📑 Documentação da API
+## Como testar?
 
-A documentação interativa do FastAPI pode ser acessada: 📘 **Swagger**: [http://localhost:8000/docs](http://localhost:8000/docs) e 📕 **Redoc**: [http://localhost:8000/redoc](http://localhost:8000/redoc).
+## Exemplo de `curl` para a pergunta "O que são hotleads?"
 
-## 🔗 Endpoints
+```bash
+curl -X 'POST' 'http://localhost:8000/ask_question' \
+     -H 'accept: application/json' \
+     -H 'Content-Type: application/json' \
+     -d '{ "question": "O que são hotleads?" }'
+```
 
-### 1. 🔍 `GET /`
-**Descrição**: Endpoint inicial para verificar se a aplicação está funcionando. Exemplo de `curl`: `curl -X 'GET' 'http://localhost:8000/' -H 'accept: application/json'`. Resposta esperada: `{"message": "Bem-vindo ao serviço de documentos e perguntas!"}`.
+## Exemplo de `curl` para a pergunta "Entre os produtos digitais, quais os formatos de Ebooks aceitos?"
 
-### 2. 📚 `GET /load_documents`
-**Descrição**: Carrega documentos da Hotmart e cria um índice FAISS para consultas. Exemplo de `curl`: `curl -X 'GET' 'http://localhost:8000/load_documents' -H 'accept: application/json'`. Resposta esperada: `{"status": "Documentos carregados e indexados com sucesso"}`.
-
-### 3. ❓ `POST /ask_question`
-**Descrição**: Faz uma pergunta sobre a Hotmart e retorna a resposta com base nos documentos carregados. Exemplo de `curl`: `curl -X 'POST' 'http://localhost:8000/ask_question' -H 'accept: application/json' -H 'Content-Type: application/json' -d '{ "question": "Quem pode ser produtor?" }'`. Parâmetro: `question` (string) - A pergunta que o usuário deseja fazer sobre a Hotmart. Resposta esperada: `{"answer": "Resposta gerada pelo modelo de IA com base nos documentos"}`.
-
+```bash
+curl -X 'POST' 'http://localhost:8000/ask_question' \
+-H 'accept: application/json' \
+-H 'Content-Type: application/json' \
+-d '{ "question": "Entre os produtos digitais, quais os formatos de Ebooks aceitos?" }'
+```
 
 
 🎉 Com este guia, você tem tudo o que precisa para configurar, executar e utilizar sua aplicação FastAPI. Qualquer ajuste ou personalização adicional pode ser facilmente implementado conforme necessário. 📫 Dúvidas? Sinta-se à vontade para contribuir ou entrar em contato!

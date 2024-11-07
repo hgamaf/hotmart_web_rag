@@ -10,38 +10,27 @@ Antes de começar, certifique-se de ter o seguinte instalado: 🐍 **Python 3.9+
 
 ### Instruções de Configuração do Projeto
 
-1. **Clone o repositório**:
-   - Execute o comando:
-     ```bash
-     git clone https://github.com/hgamaf/hotmart_web_rag.git
-     ```
-   - Navegue até o diretório do projeto:
-     ```bash
-     cd hotmart_web_rag
-     ```
+```bash
+# 1. Clone o repositório
+git clone https://github.com/hgamaf/hotmart_web_rag.git
+cd hotmart_web_rag
 
-2. **Crie e ative um ambiente virtual**:
-   - No Windows:
-     ```bash
-     python -m venv .venv
-     .venv\Scripts\activate
-     ```
-   - No Mac:
-     ```bash
-     python3 -m venv .venv
-     source .venv/bin/activate
-     ```
+# 2. Crie e ative um ambiente virtual
+# No Windows:
+python -m venv .venv
+.venv\Scripts\activate
 
-3. **Instale as dependências**:
-   ```bash
-   pip install -r requirements.txt
+# No Mac:
+python3 -m venv .venv
+source .venv/bin/activate
 
-4.**Configure as variáveis de ambiente**:
-     ```bash
-     echo # Variáveis de ambiente >> .env
-     ```
-Abra o arquivo .env em um editor de texto e adicione a chave da API do OpenAI: OPENAI_API_KEY=your_openai_api_key
+# 3. Instale as dependências
+pip install -r requirements.txt
 
+# 4. Configure as variáveis de ambiente
+echo # Variáveis de ambiente >> .env
+# Abra o arquivo .env em um editor de texto e adicione a chave da API do OpenAI
+# Exemplo: OPENAI_API_KEY=your_openai_api_key
 
 ## 🚀 Executando com FastAPI
 

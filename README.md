@@ -17,6 +17,9 @@ Antes de começar, certifique-se de ter o seguinte instalado: 🐍 **Python 3.9+
 
 Para iniciar o servidor FastAPI localmente, execute o comando `uvicorn main:app --reload`. A aplicação estará disponível em [http://localhost:8000](http://localhost:8000).
 
+![image](https://github.com/user-attachments/assets/adea6a8c-202e-4c4d-a289-340b65f0b2d4)
+
+
 ## 📑 Documentação da API
 
 A documentação interativa do FastAPI pode ser acessada: 📘 **Swagger**: [http://localhost:8000/docs](http://localhost:8000/docs) e 📕 **Redoc**: [http://localhost:8000/redoc](http://localhost:8000/redoc).

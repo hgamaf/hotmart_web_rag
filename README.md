@@ -79,13 +79,13 @@ curl -X 'POST' 'http://localhost:8000/ask_question' \
      -d '{ "question": "O que são hotleads?" }'
 ```
 
-## Exemplo de `curl` para a pergunta "Entre os produtos digitais, quais os formatos de Ebooks aceitos?"
+## Exemplo de `curl` para a pergunta sobre "Produtos digitais"
 
 ```bash
 curl -X 'POST' 'http://localhost:8000/ask_question' \
 -H 'accept: application/json' \
 -H 'Content-Type: application/json' \
--d '{ "question": "Entre os produtos digitais, quais os formatos de software aceitos?" }'
+-d '{ "question": "Entre os produtos digitais, quais os formatos de screencasts aceitos?" }'
 ```
 
 

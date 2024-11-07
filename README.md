@@ -81,9 +81,8 @@ Se preferir, você pode rodar a aplicação em um contêiner Docker para simplif
    - Quando o contêiner estiver em execução, a aplicação estará disponível em [http://localhost:8000](http://localhost:8000).
    - Aguarde até que o terminal confirme que a aplicação está rodando e pronta para receber requisições.
 
----
 
-## Como testar?
+## 🧪 Como testar?
 
 Após a aplicação estar rodando no Docker, você pode verificar se ela está funcionando corretamente enviando uma pergunta para o endpoint. Abaixo está um exemplo de `curl` que pode ser executado somente **após** os passos acima:
 

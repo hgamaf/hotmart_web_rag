@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  fastapi_app:
+    build:
+      context: . # Caminho onde está o Dockerfile (raiz do projeto)
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000" # Mapeia a porta local 8000 para a porta 8000 do container
+    env_file:
+      - .env # Carrega variáveis de ambiente do arquivo .env
+    volumes:
+      - ./src:/app/src # Mapeia o diretório src local para o diretório src no container

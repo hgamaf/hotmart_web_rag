@@ -25,9 +25,12 @@ Se preferir, você pode rodar a aplicação em um contêiner Docker.
 
 ### Passos para execução:
 
-1. 📦 Construa a imagem com `docker-compose build`.
-2. ▶️ Execute o contêiner com `docker-compose up`.
-3. A aplicação estará disponível em [http://localhost:8000](http://localhost:8000) e pronta para receber requisições.
+1. **ATENÇÃO**! Você deve inicializar o Docker Desktop
+2. 📦 Construa a imagem com `docker-compose build`.
+3. ▶️ Execute o contêiner com `docker-compose up`.
+4. A aplicação estará disponível em [http://localhost:8000](http://localhost:8000) e pronta para receber requisições.
+
+![image](https://github.com/user-attachments/assets/86b83172-efc7-423d-8c7b-ed8be67d2017)
 
 
 ## 📑 Documentação da API

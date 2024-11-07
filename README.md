@@ -8,7 +8,7 @@ Antes de começar, certifique-se de ter o seguinte instalado: **Python 3.9+**, *
 
 ## Configuração
 
-1. Clone o repositório com `git clone https://github.com/seu-usuario/seu-repositorio.git` e navegue até ele com `cd seu-repositorio`.
+1. Clone este repositório com `git clone https://github.com/seu-usuario/seu-repositorio.git` e navegue até ele com `cd seu-repositorio`.
 2. Crie e ative um ambiente virtual com `python3 -m venv .venv` e `source .venv/bin/activate`.
 3. Instale as dependências com `pip install -r requirements.txt`.
 4. Configure as variáveis de ambiente criando um arquivo `.env` na raiz do projeto com a chave da API do OpenAI: `OPENAI_API_KEY=your_openai_api_key`.
@@ -19,7 +19,9 @@ Para iniciar o servidor FastAPI localmente, execute o comando `uvicorn tests.mai
 
 ## Documentação da API
 
-A documentação interativa do FastAPI pode ser acessada em Swagger: [http://localhost:8000/docs](http://localhost:8000/docs) e Redoc: [http://localhost:8000/redoc](http://localhost:8000/redoc).
+A documentação interativa do FastAPI pode ser acessada: 
+- Swagger: [http://localhost:8000/docs](http://localhost:8000/docs)
+- Redoc: [http://localhost:8000/redoc](http://localhost:8000/redoc)
 
 ## Endpoints
 
@@ -27,7 +29,9 @@ A documentação interativa do FastAPI pode ser acessada em Swagger: [http://loc
 
 2. `GET /load_documents` - Carrega documentos da Hotmart e cria um índice FAISS para consultas. Exemplo de `curl`: `curl -X 'GET' 'http://localhost:8000/load_documents' -H 'accept: application/json'`. Resposta esperada: `{"status": "Documentos carregados e indexados com sucesso"}`.
 
-3. `POST /ask_question` - Faz uma pergunta sobre a Hotmart e retorna a resposta com base nos documentos carregados. Exemplo de `curl`: `curl -X 'POST' 'http://localhost:8000/ask_question' -H 'accept: application/json' -H 'Content-Type: application/json' -d '{ "question": "Quem pode ser produtor?" }'`. Parâmetro: `question` (string) - A pergunta que o usuário deseja fazer sobre a Hotmart. Resposta esperada: `{"answer": "Resposta gerada pelo modelo de IA com base nos documentos"}`.
+3. `POST /ask_question` - Faz uma pergunta sobre a Hotmart e retorna a resposta com base nos documentos carregados.
+
+Exemplo de `curl`: `curl -X 'POST' 'http://localhost:8000/ask_question' -H 'accept: application/json' -H 'Content-Type: application/json' -d '{ "question": "Quem pode ser produtor?" }'`. Parâmetro: `question` (string) - A pergunta que o usuário deseja fazer sobre a Hotmart. Resposta esperada: `{"answer": "Resposta gerada pelo modelo de IA com base nos documentos"}`.
 
 ## Executando com Docker
 

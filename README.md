@@ -52,10 +52,6 @@ echo # Variáveis de ambiente >> .env
 ##### Abra o arquivo .env em um editor de texto e adicione a chave da API do OpenAI
 ##### Exemplo: OPENAI_API_KEY=your_openai_api_key
 
-## 🚀 Executando com FastAPI
-
-Para iniciar o servidor FastAPI localmente, execute o comando `uvicorn main:app --reload`. A aplicação estará disponível em [http://localhost:8000](http://localhost:8000).
-
 ## 🐳 Executando com Docker
 
 Se preferir, você pode rodar a aplicação em um contêiner Docker para simplificar a configuração e garantir que todas as dependências estejam isoladas.
@@ -99,6 +95,11 @@ Após a aplicação estar rodando no Docker, você pode verificar se ela está f
         -H 'Content-Type: application/json' \
         -d '{ "question": "O que são hotleads?" }'
    ```
+   ---
+
+## 🚀 Executando com FastAPI
+
+Para iniciar o servidor FastAPI localmente, execute o comando `uvicorn main:app --reload`. A aplicação estará disponível em [http://localhost:8000](http://localhost:8000).
 
 
 

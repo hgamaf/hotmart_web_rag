@@ -33,7 +33,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-# 4. Configure as variáveis de ambiente
+##### 4. Configure as variáveis de ambiente
 ```bash
 echo # Variáveis de ambiente >> .env
 ```

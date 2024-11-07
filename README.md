@@ -4,7 +4,9 @@ Este é um serviço de perguntas e respostas desenvolvido com **FastAPI** que pe
 
 ## 📋 Pré-requisitos
 
-Antes de começar, certifique-se de ter o seguinte instalado: 🐍 **Python 3.9+**, 🐋 **Docker** (opcional, para rodar em contêiner) e 📦 **Virtualenv** (recomendado para ambiente isolado).
+Antes de começar, certifique-se de ter o seguinte instalado: 
+- 🐍 **Python 3.9+**
+- 🐋 **Docker Compose** (https://docs.docker.com/compose/) 
 
 ## ⚙️ Configuração
 

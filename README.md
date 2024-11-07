@@ -56,8 +56,6 @@ echo # Variáveis de ambiente >> .env
 
 Para iniciar o servidor FastAPI localmente, execute o comando `uvicorn main:app --reload`. A aplicação estará disponível em [http://localhost:8000](http://localhost:8000).
 
-![image](https://github.com/user-attachments/assets/7ef22cbe-2b79-497a-bca4-5a3b70a0f876)
-
 ## 🐳 Executando com Docker
 
 Se preferir, você pode rodar a aplicação em um contêiner Docker para simplificar a configuração e garantir que todas as dependências estejam isoladas.
@@ -84,6 +82,8 @@ Se preferir, você pode rodar a aplicação em um contêiner Docker para simplif
 4. **Verifique o status**:
    - Quando o contêiner estiver em execução, a aplicação estará disponível em [http://localhost:8000](http://localhost:8000).
    - Aguarde até que o terminal confirme que a aplicação está rodando e pronta para receber requisições.
+
+![image](https://github.com/user-attachments/assets/7ef22cbe-2b79-497a-bca4-5a3b70a0f876)
 
 
 ## 🧪 Como testar?

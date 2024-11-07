@@ -13,11 +13,21 @@ Antes de começar, certifique-se de ter o seguinte instalado: 🐍 **Python 3.9+
 3. 📥 Instale as dependências com `pip install -r requirements.txt`.
 4. 🔐 Configure as variáveis de ambiente criando um arquivo `.env` na raiz do projeto com a chave da API do OpenAI: `OPENAI_API_KEY=your_openai_api_key`.
 
-## 🚀 Executando a Aplicação (via FastAPI)
+## 🚀 Executando com FastAPI
 
 Para iniciar o servidor FastAPI localmente, execute o comando `uvicorn main:app --reload`. A aplicação estará disponível em [http://localhost:8000](http://localhost:8000).
 
 ![image](https://github.com/user-attachments/assets/7ef22cbe-2b79-497a-bca4-5a3b70a0f876)
+
+## 🐳 Executando com Docker
+
+Se preferir, você pode rodar a aplicação em um contêiner Docker.
+
+### Passos para execução:
+
+1. 📦 Construa a imagem com `docker-compose build`.
+2. ▶️ Execute o contêiner com `docker-compose up`.
+3. A aplicação estará disponível em [http://localhost:8000](http://localhost:8000) e pronta para receber requisições.
 
 
 ## 📑 Documentação da API
@@ -35,16 +45,6 @@ A documentação interativa do FastAPI pode ser acessada: 📘 **Swagger**: [htt
 ### 3. ❓ `POST /ask_question`
 **Descrição**: Faz uma pergunta sobre a Hotmart e retorna a resposta com base nos documentos carregados. Exemplo de `curl`: `curl -X 'POST' 'http://localhost:8000/ask_question' -H 'accept: application/json' -H 'Content-Type: application/json' -d '{ "question": "Quem pode ser produtor?" }'`. Parâmetro: `question` (string) - A pergunta que o usuário deseja fazer sobre a Hotmart. Resposta esperada: `{"answer": "Resposta gerada pelo modelo de IA com base nos documentos"}`.
 
-## 🐳 Executando com Docker
 
-Se preferir, você pode rodar a aplicação em um contêiner Docker.
-
-### Passos para execução:
-
-1. 📦 Construa a imagem com `docker-compose build`.
-2. ▶️ Execute o contêiner com `docker-compose up`.
-3. A aplicação estará disponível em [http://localhost:8000](http://localhost:8000) e pronta para receber requisições.
-
----
 
 🎉 Com este guia, você tem tudo o que precisa para configurar, executar e utilizar sua aplicação FastAPI. Qualquer ajuste ou personalização adicional pode ser facilmente implementado conforme necessário. 📫 Dúvidas? Sinta-se à vontade para contribuir ou entrar em contato!

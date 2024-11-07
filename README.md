@@ -85,7 +85,7 @@ curl -X 'POST' 'http://localhost:8000/ask_question' \
 curl -X 'POST' 'http://localhost:8000/ask_question' \
 -H 'accept: application/json' \
 -H 'Content-Type: application/json' \
--d '{ "question": "Entre os produtos digitais, quais os formatos de Ebooks aceitos?" }'
+-d '{ "question": "Entre os produtos digitais, quais os formatos de software aceitos?" }'
 ```
 
 

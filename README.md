@@ -111,7 +111,7 @@ Para iniciar o servidor FastAPI localmente, execute o comando `uvicorn main:app 
 Eu realmente admiro MUITO o trabalho da Hotmart;
 - Aprendi inglês graças a hotmart (minha filha também está aprendendo!);
 - Sou cliente e pretendo também, um dia, virar produtor;
-- O Hot 'N Code foi o evento mais f#d@ dentro da área
+- Sou fã do **Hot 'N Code** É o evento mais f#d@ dentro da área
 
 Quero agradecer MUITO a oportunidade!
 E mesmo que desse vez não de certo, gostaria muito de outras oportunidades.

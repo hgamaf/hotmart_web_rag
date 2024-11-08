@@ -3,7 +3,8 @@
 - Este é um serviço de perguntas e respostas desenvolvido com **FastAPI**, **OpenAI** e **Docker** que permite ao usuário realizar perguntas sobre a plataforma **Hotmart** [https://hotmart.com/pt-br/blog/como-funciona-hotmart/] 
 - O Hotmart QA Service utiliza embeddings e um índice **FAISS** para retornar respostas relevantes.
 
-![image](https://github.com/user-attachments/assets/e1f7cdf9-a11e-467d-acea-501447d55dac)
+![image](https://github.com/user-attachments/assets/9ee785f7-cbc1-41e3-a756-c58d39aa3cd9)
+
 
 
 ## 📋 Pré-requisitos

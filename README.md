@@ -107,5 +107,3 @@ Após a aplicação estar rodando no Docker, você pode verificar se ela está f
 Para iniciar o servidor FastAPI localmente, execute o comando `uvicorn main:app --reload`. A aplicação estará disponível em [http://localhost:8000](http://localhost:8000).
 
 ---
-
-Contém comigo!

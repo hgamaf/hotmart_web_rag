@@ -107,15 +107,5 @@ Após a aplicação estar rodando no Docker, você pode verificar se ela está f
 Para iniciar o servidor FastAPI localmente, execute o comando `uvicorn main:app --reload`. A aplicação estará disponível em [http://localhost:8000](http://localhost:8000).
 
 ---
-## 🌟 Considerações Finais
-
-Eu realmente admiro MUITO o trabalho da Hotmart;
-- Aprendi inglês graças a hotmart (minha filha também está aprendendo!);
-- Sou cliente e pretendo também, um dia, virar produtor;
-- Sou fã do **Hot 'N Code** É o evento mais f#d@ dentro da área
-
-Quero agradecer MUITO a oportunidade!
-E mesmo que desse vez não de certo, gostaria muito de outras oportunidades.
-Sou fã do trabalho de vocês!
 
 Contém comigo!
